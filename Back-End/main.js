@@ -11,8 +11,8 @@ var app = express()
 
 app.use(bodyParser.json())
 
-mongoose.connect(url, (err) => {
-    if (!err) {
+mongoose.connect(url, (error) => {
+    if (!error) {
         console.log('Connectoed to db')
     }
 });
